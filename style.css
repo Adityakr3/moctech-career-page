@@ -1,0 +1,263 @@
+/* @font-face {
+    font-family: gilroy;
+    src: url(./public/fonts/Gilroy-Regular.ttf)format("truetype");
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+html,
+body {
+    min-height: 100vh;
+    width: 100%;
+    color: #999;
+    background-color: rgb(15, 18, 21);
+    scroll-behavior: smooth;
+}
+#main{
+    min-height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(./image/19873.jpg);
+}
+.overlay{
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.668);
+}
+nav {
+    width: 100%;
+    height: 70px;
+    background-color: #9a9a9a;
+    color: #222;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    margin-right: 6vw;
+}
+
+nav li{
+    list-style: none;
+    padding: 0 16px;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.header-text {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    margin-top:6%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #f6f2f2;
+  }
+.header-text h1 {
+    font-size: 3vw;
+    font-weight: 800;
+
+  }
+.header-text p {
+    font-size: 1.5vw;
+    font-weight: 600;
+
+}
+.jobOpeningBox{
+    width: 100%;
+    height: 16vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #e5e5e5;
+}
+.jobOpeningBox h1{
+    font-size: 3vw;
+}
+.jobOpeningBox p{
+    font-size: 1vw;
+}
+.jobOpeningBox button{
+    font-size: 1.2vw;
+    margin-top: 2vh;
+    padding: .5vw .8vw;
+ background-color: #004AB0;
+ border: none;
+ border-radius: .8vw;
+}
+
+.jobOpeningBox button a{
+    text-decoration: none;
+    color: white;
+}
+@media (max-width : 580px) {
+    nav{
+      height: 8vh;
+    }
+    .logo img {
+      height: 8vw;
+    }
+    .hamburger {
+      display: block;
+    }
+    .header-text{
+       margin-top:15%;
+    }
+    .header-text h1 {
+      font-size: 12vw;
+    }
+    .header-text p {
+      font-size: 4vw;
+      text-align: center;
+    }
+    .jobOpeningBox{
+      height: 10vh;
+    }
+    .jobOpeningBox h1{
+      font-size: 6vw;
+      text-align: center;
+    }
+    .jobOpeningBox p{
+      font-size: 4vw;
+      margin-top: 3%;
+      text-align: center;
+
+    }
+    .jobOpeningBox button{
+      font-size: 6vw;
+    }
+    .nav-links {
+        position: fixed;
+        top: 0;
+        height: 100vh;
+        background: #4d4bb4;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        clip-path: (50px at 100% -20%);
+        -webkit-clip-path: circle(50px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+      }
+      .nav-links.open {
+        clip-path: circle(1000px at 100%);
+        -webkit-clip-path: circle(1000px at 90% -22%);
+        pointer-events: all;
+      }
+      .nav-links li {
+        margin: 5vw;
+        font-size: 5vw;
+      }
+      .login-button {
+        font-size: 5vw;
+      }
+    
+      .toggle .line1 {
+        transform: rotate(-45deg) translate(-1.7vw, 1vw);
+      }
+      .toggle .line2 {
+        transition: all 0.7s ease;
+        width: 0;
+      }
+      .toggle .line3 {
+        transform: rotate(45deg) translate(-1.3vw, -.7vw);
+      }
+    }
+    @media (min-width: 581px) and (max-width: 767px) { 
+      nav{
+        height: 10vh;
+    }
+      .logo img {
+        height: 8vw;
+    }
+    .hamburger {
+      display: block;
+    }
+    .header-text h1 {
+      font-size: 5vw;
+    }
+    .header-text p {
+      font-size: 3vw;
+    }
+    .jobOpeningBox{
+      height: 15vh;
+    }
+    .jobOpeningBox h1{
+      font-size: 4vw;
+    }
+    .jobOpeningBox p{
+      font-size: 2vw;
+    }
+    .jobOpeningBox button{
+      font-size: 2vw;
+    }
+    .nav-links {
+      position: fixed;
+      top: 0;
+      height: 100vh;
+      background: #4d4bb4;
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      clip-path: (50px at 100% -20%);
+      -webkit-clip-path: circle(50px at 90% -10%);
+      transition: all 1s ease-out;
+      pointer-events: none;
+    }
+    .nav-links.open {
+      clip-path: circle(1000px at 100%);
+      -webkit-clip-path: circle(1000px at 100% );
+      pointer-events: all;
+    }
+    .nav-links li {
+      opacity: 2;
+      margin: 5vw;
+      font-size: 3vw;
+    }
+    .login-button {
+      font-size: 3vw;
+    }
+    
+    .hamburger div{
+      width: 4vw; 
+    }
+    .toggle .line1 {
+      transform: rotate(-45deg) translate(-1.6vw, 1vw);
+    }
+    .toggle .line2 {
+      transition: all 0.7s ease;
+      width: 0;
+    }
+    .toggle .line3 {
+      transform: rotate(45deg) translate(-1.3vw, -.7vw);
+    }
+
+    }
+    @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) { 
+      nav{
+        height: 12vh;
+    }
+    .jobOpeningBox{
+      height: 25vh;
+    }
+    
+    }
