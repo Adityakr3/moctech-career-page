@@ -138,12 +138,15 @@ nav li a {
     }
     .jobOpeningBox p{
       font-size: 4vw;
-      margin-top: 3%;
+      margin-top: 5%;
       text-align: center;
+      margin: 8px;
 
     }
-    .jobOpeningBox button{
-      font-size: 6vw;
+    .jobOpeningBox > button{
+      font-size: 5vw;
+      padding: 12px 24px;
+      border-radius: 25px ;
     }
     .nav-links {
         position: fixed;
